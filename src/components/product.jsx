@@ -2,8 +2,15 @@ import React from 'react';
 
 
 const Helloword = ({ title }) => {
-    return <div style={{ fontSize: "20px", backgroundColor:"teal",color: "black", border: "1px solid black", padding: "10px", margin: "5px" }}>
-      {title}
+  const TitleHandler = () => {
+    // console.log('TitleHandler');
+    console.log({title});
+  }
+    return <div>
+      <h1>{title}</h1>
+      <div>
+        <button clsssName='btn' onClick={TitleHandler}>Click me</button>
+      </div>
     </div>;
   };
   
